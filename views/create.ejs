@@ -1,0 +1,46 @@
+  <body class="Create">  
+    <% if (locals.text) { %>
+        <p>Your post:   <%= text %></p>
+        <br>
+        <p>All posts: <%=allposts%></p>
+        <% } else { %>
+        <h1 class="about">Create a post</h1>
+        <% } %>
+    
+    <form action="/submit" method="POST" id="area">
+      <textarea id="area" name="text" rows="30" cols="90"></textarea>
+      <br>
+      <input type="submit" value="Submit" id="submitButton">
+
+</body>
+<style>
+ .about{
+   color: #FFFDD0;
+   font-style: italic;
+   font-family: "Pacifico", cursive;
+   font-weight: 400;
+   font-size: 100px;
+   text-align: center;
+   margin-top: 10px;
+ }
+ .Create{
+    background-color: #9FE2BF;
+ }
+ input[type=submit] {
+  background-color: #418b65;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+
+p{
+    color:white;
+    font-family: "Pacifico", cursive;
+    font-size: 25px;
+}
+</style>
+
+
